@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website Style Guide</title>
+    <link rel="stylesheet" href="./resources/css/styles.css">
+    <!-- Custom scripts for dynamic user interaction -->
+    <script defer src="./resources/scripts/darkmode.js"></script>
+    <script defer src="./resources/scripts/floating.js"></script>
+    <script defer src="./resources/scripts/smoothscroll"></script>
+
+    <!-- Custom Google Fonts -->
+
+    <!-- Londrina Outline, used in banner -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
+
+    <!-- Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Labrada -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- ABeeZee -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#Color" onclick="scrollToSection(event, 'Color')">Color</a></li>
+                <li><a href="#Fonts" onclick="scrollToSection(event, 'Fonts')">Fonts</a></li>
+                <li><a href="#TextStyles" onclick="scrollToSection(event, 'TextStyles')">Text Styles</a></li>
+                <li><a href="#Float" onclick="scrollToSection(event, 'Float')">Float</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="banner">
+            <div class="bannergradient"></div>
+            <h1>My Website Style Guide</h1>
+        </div>
+
+        <!-- My guides to help me quickly make websites in the future -->
+        
+        <div class="guides">
+
+            <!-- Colors -->
+
+            <section class="guide colors" id="Color">
+                <button class="darkmode" onclick="toggleDarkMode()">Dark Mode</button>
+                <h2>Color</h2>
+                <div class="colorscontainer">
+                    <div class="color aliceblue blacktext">
+                        <div class="colorproperties">
+                            <h3>Alice Blue</h3>
+                            <p>rgb(240, 248, 255)</p>
+                        </div>
+                    </div>
+                    <div class="color blacktext lightsalmon">
+                        <div class="colorproperties">
+                            <h3>Light Salmon</h3>
+                            <p>rgb(255, 160, 122)</p>
+                        </div>
+                    </div>
+                    <div class="color whitetext coral">
+                        <div class="colorproperties">
+                            <h3>Coral</h3>
+                            <p>rgb(255, 126, 79)</p>
+                        </div>
+                    </div>
+                    <div class="color whitetext tomato">
+                        <div class="colorproperties">
+                            <h3>Tomato</h3>
+                            <p>rgb(255, 99, 71)</p>
+                        </div>
+                    </div>
+                    <div class="color crimson whitetext">
+                        <div class="colorproperties">
+                            <h3>Crimson</h3>
+                            <p>rgb(220, 20, 60)</p>
+                        </div>
+                    </div>
+                    <div class="color whitetext mediumorchid">
+                        <div class="colorproperties">
+                            <h3>Medium Orchid</h3>
+                            <p>rgb(186, 85, 211)</p>
+                        </div>
+                    </div>
+                    <div class="color blueviolet whitetext">
+                        <div class="colorproperties">
+                            <h3>Blue Violet</h3>
+                            <p>rgb(138, 43, 226)</p>
+                        </div>
+                    </div>
+                    <div class="color whitetext royalblue">
+                        <div class="colorproperties">
+                            <h3>Royal Blue</h3>
+                            <p>rgb(65, 105, 225)</p>
+                        </div>
+                    </div>
+                    <div class="color whitetext cornflowerblue">
+                        <div class="colorproperties">
+                            <h3>Cornflower Blue</h3>
+                            <p>rgb(100, 149, 237)</p>
+                        </div>
+                    </div>
+                    <div class="color whitetext darkslategray">
+                        <div class="colorproperties">
+                            <h3>Darkslate Gray</h3>
+                            <p>rgb(46, 79, 79)</p>
+                        </div>
+                    </div>
+                    <div class="color teal whitetext">
+                        <div class="colorproperties">
+                            <h3>Teal</h3>
+                            <p>rgb(0, 128, 128)</p>
+                        </div>
+                    </div>
+                    <div class="color whitetext lightseagreen">
+                        <div class="colorproperties">
+                            <h3>Light Sea Green</h3>
+                            <p>rgb(32, 178, 170)</p>
+                        </div>
+                    </div>
+                    <div class="color cadetblue whitetext">
+                        <div class="colorproperties">
+                            <h3>Cadet Blue</h3>
+                            <p>rgb(95, 158, 160)</p>
+                        </div>
+                    </div>
+                    <div class="color aqua blacktext">
+                        <div class="colorproperties">
+                            <h3>Aqua</h3>
+                            <p>rgb(0, 255, 255)</p>
+                        </div>
+                    </div>
+                    <div class="color whitetext olivedrab">
+                        <div class="colorproperties">
+                            <h3>Olive Drab</h3>
+                            <p>rgb(107, 142, 35)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Fonts -->
+
+            <section class="guide fonts" id="Fonts">
+                <h2>Fonts</h2>
+                <div class="fontcontainer">
+                    <p>Some of these are built-in. Some are google fonts.</p>
+                    <div class="font londrinaoutline">
+                        <h3>Londrina Outline</h3>
+                        <p>The quick brown fox jumps over the lazy dog.</p>
+                        <p class="bold">The quick brown fox jumps over the lazy dog.</p>
+                        <p class="italic">The quick brown fox jumps over the lazy dog.</p>
+                    </div>
+                    <div class="font lato">
+                        <h3>Lato</h3>
+                        <p>The quick brown fox jumps over the lazy dog.</p>
+                        <p class="bold">The quick brown fox jumps over the lazy dog.</p>
+                        <p class="italic">The quick brown fox jumps over the lazy dog.</p>
+                    </div>
+                    <div class="font labrada">
+                        <h3>Labrada</h3>
+                        <p>The quick brown fox jumps over the lazy dog.</p>
+                        <p class="bold">The quick brown fox jumps over the lazy dog.</p>
+                        <p class="italic">The quick brown fox jumps over the lazy dog.</p>
+                    </div>
+                    <div class="font abeezee">
+                        <h3>ABeeZee</h3>
+                        <p>The quick brown fox jumps over the lazy dog.</p>
+                        <p class="bold">The quick brown fox jumps over the lazy dog.</p>
+                        <p class="italic">The quick brown fox jumps over the lazy dog.</p>
+                    </div>
+                    <div class="font verdana">
+                        <h3>Verdana</h3>
+                        <p>The quick brown fox jumps over the lazy dog.</p>
+                        <p class="bold">The quick brown fox jumps over the lazy dog.</p>
+                        <p class="italic">The quick brown fox jumps over the lazy dog.</p>
+                    </div>
+                    <div class="font georgia">
+                        <h3>Georgia</h3>
+                        <p>The quick brown fox jumps over the lazy dog.</p>
+                        <p class="bold">The quick brown fox jumps over the lazy dog.</p>
+                        <p class="italic">The quick brown fox jumps over the lazy dog.</p>
+                    </div>
+                    <div class="font cambria">
+                        <h3>Cambria</h3>
+                        <p>The quick brown fox jumps over the lazy dog.</p>
+                        <p class="bold">The quick brown fox jumps over the lazy dog.</p>
+                        <p class="italic">The quick brown fox jumps over the lazy dog.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Text Styles -->
+
+            <section class="guide text" id="TextStyles">
+                <h2>Text Styles</h2>
+                <div class="stylescontainer">
+                    <p>Default font-family is <span class="times">Times New Roman</span>.</p>
+                    <p>1em represents the current font-size. If not already set, the default is the font-size of the document (html element) 16px.</p>
+                    <div class="style h1">
+                        <h1>H1: Main page heading</h1>
+                        <ul>
+                            <li>Font-weight: bold (700)</li>
+                            <li>Font-size: 2em (32px)</li>
+                            <li>Margin-top-bottom: 0.67em (21.4px)</li>
+                        </ul>
+                    </div>
+                    <div class="style h2">
+                        <h2>H2: Subheading</h2>
+                        <ul>
+                            <li>Font-weight: bold (700)</li>
+                            <li>Font-size: 1.5em (24px)</li>
+                            <li>Margin-top-bottom: 0.83em (19.9px)</li>
+                        </ul>
+                    </div>
+                    <div class="style h3">
+                        <h3>H3: Subheading</h3>
+                        <ul>
+                            <li>Font-weight: bold (700)</li>
+                            <li>Font-size: 1.17em (18.7px)</li>
+                            <li>Margin-top-bottom: 1em (18.7px)</li>
+                        </ul>
+                    </div>
+                    <div class="style h4">
+                        <h4>H4: Subheading</h4>
+                        <ul>
+                            <li>Font-weight: bold (700)</li>
+                            <li>Font-size: 1em (16px)</li>
+                            <li>Margin-top-bottom: 1.33em (21.3px)</li>
+                        </ul>
+                    </div>
+                    <div class="style h5">
+                        <h5>H5: Subheading</h5>
+                        <ul>
+                            <li>Font-weight: bold (700)</li>
+                            <li>Font-size: 0.83em (13.3px)</li>
+                            <li>Margin-top-bottom: 1.67em (22.2px)</li>
+                        </ul>
+                    </div>
+                    <div class="style h6">
+                        <h6>H6: Subheading</h6>
+                        <ul>
+                            <li>Font-weight: bold (700)</li>
+                            <li>Font-size: 0.67em (10.7px)</li>
+                            <li>Margin-top-bottom: 2.33em (25px)</li>
+                        </ul>
+                    </div>
+                    <div class="style p">
+                        <p>P: Paragraph</p>
+                        <ul>
+                            <li>Font-weight: normal (400)</li>
+                            <li>Font-size: 1em (16px)</li>
+                            <li>Margin-top-bottom: 1em (16px)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Float -->
+
+            <section class="guide floating" id="Float">
+                <h2>Float</h2>
+                <p>(interactive)</p>
+                <div class="floatcontainer">
+                    <div class="float">
+                        <div class="box crimson floatleft" onclick="toggleBox(0)">Float: left</div>
+                        <div class="box coral floatright" onclick="toggleBox(1)">Float: right</div>
+                        <p>When an element is given the float property, it is lifted up out of the document flow. Following elements will then shift upward to take it's place. Then the floated element is placed back down, without moving the other elements. This allows following elements to intersect with, or be in the same place as, the floating element (ie this paragraph border is intersecting the boxes). However, text has a special property, it will wrap around the floating element. Fellow floating elements will not intersect each other, but will act similar to inline-block elements, either aligned left or right depending on the float. If an element is given the clear property, it will refuse to intersect floating elements, creating a new line.</p>
+                    </div>
+                    
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <a href="#" onclick="scrollToSection(event)">Back to top</a>
+    </footer>
+</body>
+</html>

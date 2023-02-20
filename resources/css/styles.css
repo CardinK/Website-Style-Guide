@@ -1,0 +1,431 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    background-color: rgb(29, 29, 29);
+}
+
+nav ul {
+    font-family: "Lato";
+    text-align: center;
+    padding: 13px;
+    font-size: 21px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: 0.15s;
+}
+
+a:hover {
+    color: rgb(154, 255, 255);
+}
+
+a:active {
+    color: rgb(111, 133, 255);
+}
+
+.banner {
+    background-image: url("https://miro.medium.com/v2/resize:fit:1400/format:webp/1*H3C49Nb6sU5rAqPZSDX23w.png");
+    background-position: center;
+    position: relative;
+    box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.303);;
+}
+
+.bannergradient {
+    background: radial-gradient(rgb(196, 255, 253), rgba(0, 0, 0, 0.504));
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.banner h1 {
+    font-size: 80px;
+    position: relative;
+    text-align: center;
+    font-family: 'Londrina Outline';
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.46);
+    padding: 120px;
+}
+
+.guides {
+    padding: 0 40px 40px;
+    position: relative;
+}
+
+.guide h2 {
+    font-size: 40px;
+    color: white;
+    text-shadow: 0 3px 4px rgba(255, 255, 255, 0.297);
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    margin: 40px 0 0;
+    padding-top: 20px;
+}
+
+.guide > p {
+    font-size: 14px;
+    color: white;
+    text-shadow: 0 3px 4px rgba(255, 255, 255, 0.297);
+    text-align: center;
+    font-family: "Lato";
+}
+
+/* Colors */
+
+button.darkmode {
+    position: absolute;
+    right: 90px;
+    top: 45px;
+    transform: translate(50%, -50%);
+    padding: 8px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: 1px solid rgba(127, 127, 127, 0.488);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: padding 0.2s;
+    font-family: Verdana, sans-serif;
+}
+
+button.darkmode:hover {
+    padding: 10px 11px;
+}
+
+button.darkmode:active {
+    border-width: 3px;
+}
+
+.colorscontainer {
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 5px 5px 0;
+    text-align: center;
+    transition: 0.5s;
+    border-radius: 4px;
+    margin-top: 20px;
+    box-shadow: 0 2px 7px 0 rgba(255, 255, 255, 0.378);
+}
+
+.color {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    position: relative;
+    font-family: Cambria, serif;
+}
+
+.colorproperties {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.326);
+}
+
+.colorproperties h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.colorproperties p {
+    text-align: center;
+    font-size: 17px;
+}
+
+.color.whitetext {
+    color: white;
+}
+
+.color.blacktext {
+    color: black;
+}
+
+.teal {
+    background-color: rgb(0, 128, 128);
+}
+
+.aqua {
+    background-color: rgb(0, 255, 255);
+}
+
+.aliceblue {
+    background-color: rgb(240, 248, 255);
+}
+
+.blueviolet {
+    background-color: rgb(138, 43, 226);
+}
+
+.crimson {
+    background-color: rgb(220, 20, 60);
+}
+
+.cadetblue {
+    background-color: rgb(95, 158, 160);
+}
+
+.coral {
+    background-color: rgb(255, 126, 79);
+}
+
+.cornflowerblue {
+    background-color: rgb(100, 149, 237);
+}
+
+.darkslategray {
+    background-color: rgb(46, 79, 79);
+}
+
+.lightsalmon {
+    background-color: rgb(255, 160, 122);
+}
+
+.lightseagreen {
+    background-color: rgb(32, 178, 170);
+}
+
+.mediumorchid {
+    background-color: rgb(186, 85, 211);
+}
+
+.olivedrab {
+    background-color: rgb(107, 142, 35);
+}
+
+.royalblue {
+    background-color: rgb(65, 105, 225);
+}
+
+.tomato {
+    background-color: rgb(255, 99, 71);
+}
+
+/* Fonts */
+
+.fontcontainer {
+    text-align: center;
+    background-color: white;
+    border-radius: 4px;
+    padding: 10px 0;
+    margin-top: 20px;
+    box-shadow: 0 2px 7px 0 rgba(255, 255, 255, 0.378);
+}
+
+.fontcontainer > p {
+    font-size: 18px;
+    margin: 8px;
+}
+
+.font {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px;
+    padding: 10px;
+    border: 1px dashed rgba(0, 0, 0, 0.337);
+    border-radius: 4px;
+}
+
+.font h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.font p {
+    font-size: 18px;
+    margin: 5px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.font.londrinaoutline {
+    font-family: 'Londrina Outline';
+}
+
+.font.lato {
+    font-family: "Lato";
+}
+
+.font.labrada {
+    font-family: "Labrada";
+}
+
+.font.abeezee {
+    font-family: "ABeeZee";
+}
+
+.font.verdana {
+    font-family: Verdana, sans-serif;
+}
+
+.font.georgia {
+    font-family: Georgia, serif;
+}
+
+.font.cambria {
+    font-family: Cambria, serif;
+}
+
+/* Text Styles */
+
+.stylescontainer {
+    text-align: center;
+    background-color: white;
+    border-radius: 4px;
+    padding: 10px 0;
+    font-family: Cambria, serif;
+    margin-top: 20px;
+    box-shadow: 0 2px 7px 0 rgba(255, 255, 255, 0.378);
+}
+
+.stylescontainer > p {
+    font-size: 18px;
+    margin: 8px;
+}
+
+.times {
+    font-family: Times;
+}
+
+.style {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px;
+    padding: 0 20px 20px;
+    border: 1px dashed rgba(0, 0, 0, 0.337);
+    border-radius: 4px;
+}
+
+.style ul {
+    text-align: left;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.style.h1 h1 {
+    margin: 0.67em 0;
+    font-size: 2em;
+}
+
+.style.h2 h2 {
+    color: black;
+    font-family: Cambria, serif;
+    font-size: 1.5em;
+    margin: 0.83em 0;
+}
+
+.style.h3 h3 {
+    margin: 1em 0;
+}
+
+.style.h4 h4 {
+    margin: 1.33em 0;
+}
+
+.style.h5 h5 {
+    margin: 1.67em;
+}
+
+.style.h6 h6 {
+    margin: 2.33em;
+}
+
+.style.p p {
+    margin: 1em 0;
+}
+
+/* Float */
+
+.floatcontainer {
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px;
+    min-height: 700px;
+    margin-top: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.283);
+    box-shadow: 0 2px 7px 0 rgba(255, 255, 255, 0.167);
+}
+
+.float {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    border-bottom-right-radius: 0;
+    resize: both;
+    overflow: auto;
+    width: 50%;
+    max-width: 90%;
+    min-width: 160px;
+    min-height: 120px;
+    max-height: 630px;
+    background-color: white;
+    box-shadow: 0 2px 7px 0 rgba(255, 255, 255, 0.378);
+}
+
+.float .box {
+    width: 130px;
+    height: 130px;
+    line-height: 130px;
+    position: relative;
+    margin: 10px;
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.306);
+    font-family: Cambria, serif;
+}
+
+.float .box.floatleft {
+    float: left;
+}
+
+.float .box.floatright {
+    float: right;
+}
+
+.float .box.clear {
+    clear: both;
+}
+
+.float .box:hover {
+    border: 2px solid black;
+}
+
+.float p {
+    border: 1px dashed rgba(0, 0, 0, 0.502);
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+footer {
+    text-align: center;
+    font-family: "Lato";
+    font-size: 20px;
+    padding: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}

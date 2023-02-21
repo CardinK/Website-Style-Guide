@@ -12,4 +12,4 @@ Requirements were to include sections on:
 
 In addition I have included an interactive section on the Float CSS property.
 
-Javascript was not not required for this project, but I did utilize it to enhance the user experience. I hope to update this guide as my full stack knowledge grows.
+Javascript was not required for this project, but I did utilize it to enhance the user experience. I hope to update this guide as my full stack knowledge grows.

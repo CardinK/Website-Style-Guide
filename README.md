@@ -1,6 +1,8 @@
 # Website-Style-Guide
 Welcome to my page created for the <a href="https://www.codecademy.com/career-journey/full-stack-engineer">Full Stack Engineer</a> Path, Challenge Project: <a href="https://www.codecademy.com/journeys/full-stack-engineer/paths/fscj-22-web-development-foundations/tracks/fscj-22-improved-styling-with-css/modules/wdcp-22-build-a-website-design-system-2a08b912-678e-4186-ab57-86a0fb0ca601/projects/independent-project-web-design-system">Build a Website Design System</a>
 
+View the page on <a href="https://cardink.github.io/projects/Website%20Style%20Guide/index.html">my github</a>!
+
 In this project, the goal was to create a static page, and website style guide, to assist in helping to more quickly create websites in the future!
 
 Requirements were to include sections on:
